@@ -7,14 +7,14 @@ import model_xi
 import numpy as np 
 
 
-linear_regression = model_x.linear_regression_model(dataset = [[1,2],[3,4],[5,6],[7,8],[9,10]])
+linear_regression_x = model_x.linear_regression_model(dataset = [[1,2],[3,4],[5,6],[7,8],[9,10]])
 
-linear_regression = model_xi.linear_regression_model(dataset = [[1,2],[3,4],[5,6],[7,8],[9,10]])
+linear_regression_xi = model_xi.linear_regression_model(dataset = [[1,2],[3,4],[5,6],[7,8],[9,10]])
 
-print(linear_regression.batched_dataset)
-print(linear_regression.test)
+print(linear_regression_x.batched_dataset)
+print(linear_regression_x.test)
 
-model_xi.linear_regression.execute
+linear_regression_xi.execute
 
 
 #create data
